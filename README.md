@@ -1,25 +1,44 @@
-<<<<<<< HEAD
-# TransformacionAutomatas
+# Determinización de autómatas no deterministas
 
-**TODO: Add description**
+Implementación en **Elixir** de algoritmos para trabajar con autómatas finitos no deterministas (AFND) y convertirlos a autómatas deterministas (AFD).
 
-## Installation
+## Stack
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `transformacion_automatas` to your list of dependencies in `mix.exs`:
+- Elixir ~1.14
+- Mix
 
-```elixir
-def deps do
-  [
-    {:transformacion_automatas, "~> 0.1.0"}
-  ]
-end
+## Problemas implementados
+
+| Módulo | Descripción |
+|--------|-------------|
+| `AutomataBasico` | Determinización de un AFND básico |
+| `Problema2` | Segundo ejercicio de transformación de autómatas |
+| `Problema3` | Tercer ejercicio de transformación de autómatas |
+
+## Cómo ejecutar
+
+```bash
+mix deps.get
+mix test
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/transformacion_automatas>.
+## Estructura
 
-=======
-# Determination-of-nondeterministic-automata
->>>>>>> 0a83247004b3989e89b338de7c99795c6a8d82fb
+```
+lib/
+├── problema1.ex    # AutomataBasico — determinización básica
+├── problema2.ex
+└── problema3.ex
+test/
+├── problema1_test.exs
+├── problema2_test.exs
+└── problema3_test.exs
+```
+
+## Contexto
+
+Proyecto académico de teoría de la computación (ITESM).
+
+## Autor
+
+**Ángel Jiménez Morales** — [GitHub](https://github.com/angeljim17)
